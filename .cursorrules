@@ -1,0 +1,11 @@
+See AGENTS.md — it is the canonical guidance file for AI agents (including Cursor) working in this repo.
+
+Quick summary:
+- Next.js 16 App Router + TypeScript + Tailwind v4 + shadcn/ui + Biome
+- Better Auth (email OTP + TOTP) + Drizzle + Neon + Resend
+- Server Components first; Zustand for UI only; Server Actions for mutations
+- `proxy.ts` not `middleware.ts` (Next 16 naming)
+- Do not add new dependencies without justifying in docs/tech-stack-decisions.md
+- Commit convention: Conventional Commits
+
+Read AGENTS.md before writing any code.

@@ -1,0 +1,47 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+      time: "09:00"
+      timezone: "Etc/UTC"
+    open-pull-requests-limit: 10
+    groups:
+      types:
+        patterns:
+          - "@types/*"
+      eslint-biome:
+        patterns:
+          - "@biomejs/*"
+      testing:
+        patterns:
+          - "vitest"
+          - "@vitest/*"
+          - "@testing-library/*"
+          - "@playwright/*"
+          - "@axe-core/*"
+          - "jsdom"
+      drizzle:
+        patterns:
+          - "drizzle-*"
+          - "@neondatabase/*"
+      auth:
+        patterns:
+          - "better-auth"
+      ui:
+        patterns:
+          - "radix-ui"
+          - "lucide-react"
+          - "sonner"
+          - "next-themes"
+          - "tw-animate-css"
+
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+      time: "09:00"
+      timezone: "Etc/UTC"
