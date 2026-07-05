@@ -75,5 +75,8 @@
     "typescript": "^6",
     "vitest": "^4.1.9"
   },
-  "packageManager": "pnpm@11.3.0"
+  "packageManager": "pnpm@11.3.0",
+  "pnpm": {
+    "dangerouslyAllowAllBuilds": true
+  }
 }
